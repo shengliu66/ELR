@@ -1,0 +1,75 @@
+{
+    "name": "cifar100_sy_60_resnet34",
+    "n_gpu": 1,
+    "seed": 123,
+
+    "arch": {
+        "type": "resnet34",
+        "args": {"num_classes":100}
+    },
+
+    "num_classes": 100,
+
+    "data_loader": {
+        "type": "CIFAR100DataLoader",
+        "args":{
+            "data_dir": "/dir_to_data",
+            "batch_size": 128,
+            "shuffle": true,
+            "num_batches": 0,
+            "validation_split": 0,
+            "num_workers": 8,
+            "pin_memory": true
+        }
+    },
+
+
+    "optimizer": {
+        "type": "SGD",
+        "args":{
+            "lr": 0.02,
+            "momentum": 0.9,
+            "weight_decay": 1e-3
+        }
+    },
+    
+    "train_loss": {
+        "type": "elr_loss",
+        "args":{
+            "alpha": 0.9,
+            "lambda": 7
+        }
+    },
+
+    "val_loss": "cross_entropy",
+    "metrics": [
+        "my_metric", "my_metric2"
+    ],
+
+    "lr_scheduler": {
+        "type": "MultiStepLR",
+        "args": {
+            "milestones": [80,120],
+            "gamma": 0.01
+        }
+    },
+
+    "trainer": {
+        "epochs": 150,
+        "warmup": 0,
+        "save_dir": "saved/",
+        "save_period": 1,
+        "verbosity": 2,
+        "label_dir": "saved/",       
+        "monitor": "max val_my_metric",
+        "early_stop": 2000,
+        "tensorboard": false,
+        "mlflow": true,
+        "_percent": "Percentage of noise",
+        "percent": 0.6,
+        "_begin": "When to begin updating labels",
+        "begin": 0,
+        "_asym": "symmetric noise if false",
+        "asym": false
+    }
+}
