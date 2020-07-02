@@ -1,5 +1,5 @@
 # Early-Learning Regularization Prevents Memorization of Noisy Labels
-This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels]() (2020).
+This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151) (2020).
 
 ## Requirements
 - This codebase is written for `python3`.
