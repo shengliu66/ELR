@@ -52,7 +52,7 @@ Examples for ELR and ELR+ are showed in the *readme.md* of `ELR` and `ELR_plus` 
 - Feel free to post issues via Github. 
 
 ## Reference
-For technical details and full experimental results, please refer [our paper](https://arxiv.org/abs/2007.00151).
+For technical details and full experimental results, please check [our paper](https://arxiv.org/abs/2007.00151).
 ```
 
 ```
