@@ -59,7 +59,7 @@
     "train_loss": {
         "type": "elr_plus_loss",
         "args":{
-            "alpha": 0.7,
+            "beta": 0.7,
             "lambda": 3
         }
     },
