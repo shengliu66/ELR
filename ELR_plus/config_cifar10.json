@@ -28,7 +28,7 @@
     "data_loader": {
         "type": "CIFAR10DataLoader",
         "args":{
-            "data_dir": "./data/",
+            "data_dir": "/gpfs/scratch/sl5924/noisy/data/",
             "batch_size": 128,
             "batch_size2": 128,
             "num_batches": 0,
@@ -63,7 +63,7 @@
     "train_loss": {
         "type": "elr_plus_loss",
         "args":{
-            "alpha": 0.3,
+            "alpha": 0.7,
             "lambda": 3
         }
     },
@@ -84,7 +84,7 @@
     "trainer": {
         "epochs": 200,
         "warmup": 0,
-        "save_dir": "saved/",
+        "save_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/saved/",
         "save_period": 1,
         "verbosity": 2,
         "label_dir": "saved/",

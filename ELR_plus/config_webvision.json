@@ -20,19 +20,18 @@
 
 
     "mixup_alpha": 1.0,
-    "coef_step": 0,
+    "mixup_ramp": false,
     "num_classes": 50,
     "ema_alpha": 0.997,
-    "ema_update": true,
+    "ema_update": false,
     "ema_step": 40000,
-
     
 
 
     "data_loader": {
         "type": "WebvisionDataLoader",
         "args":{
-            "data_dir": "./webvision",
+            "data_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/",
             "batch_size": 32,
             "batch_size2": 32,
             "shuffle": true,
@@ -65,7 +64,7 @@
     "train_loss": {
         "type": "elr_plus_loss",
         "args":{
-            "alpha": 0.3,
+            "alpha": 0.7,
             "lambda": 3
         }
     },
@@ -83,7 +82,7 @@
     "trainer": {
         "epochs": 100,
         "warmup": 0,
-        "save_dir": "saved/",
+        "save_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/saved/",
         "save_period": 1,
         "verbosity": 2,
         "label_dir": "saved/",
