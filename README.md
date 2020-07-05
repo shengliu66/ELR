@@ -16,12 +16,7 @@ This repository is the official implementation of [Early-Learning Regularization
 
 ## Reference
 ```
-@article{yu2020learning, 
-	author = {Liu, Sheng and Niles-Weed, Jonathan and Razavian, Narges and Fernandez-Granda, Carlos}, 
-	title = {Early-Learning Regularization Prevents Memorization of Noisy Labels}, 
-	journal = {arXiv preprint arXiv:2006.08558},
-	year = {2020}
-}
+
 ```
 ## Contact
 Please contact shengliu@nyu.edu if you have any question on the codes.
