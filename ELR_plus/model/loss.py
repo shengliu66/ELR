@@ -12,12 +12,12 @@ def cross_entropy(output, target, M=3):
     return F.cross_entropy(output, target)
 
 class elr_plus_loss(nn.Module):
-    def __init__(self, num_examp, config, device, num_classes=10, alpha=0.3):
+    def __init__(self, num_examp, config, device, num_classes=10, beta=0.3):
         super(elr_plus_loss, self).__init__()
         self.config = config
         self.pred_hist = (torch.zeros(num_examp, num_classes)).to(device)
         self.q = 0
-        self.alpha = alpha
+        self.beta = beta
         self.num_classes = num_classes
 
     def forward(self, iteration, output, y_labeled):
@@ -37,5 +37,5 @@ class elr_plus_loss(nn.Module):
 
     def update_hist(self, epoch, out, index= None, mix_index = ..., mixup_l = 1):
         y_pred_ = F.softmax(out,dim=1)
-        self.pred_hist[index] = (1-self.alpha) * self.pred_hist[index] + self.alpha *  y_pred_/(y_pred_).sum(dim=1,keepdim=True)
+        self.pred_hist[index] = self.beta * self.pred_hist[index] +  (1-self.beta) *  y_pred_/(y_pred_).sum(dim=1,keepdim=True)
         self.q = mixup_l * self.pred_hist[index]  + (1-mixup_l) * self.pred_hist[index][mix_index]
