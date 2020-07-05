@@ -16,10 +16,21 @@ Results of training a ResNet-34 with a traditional cross entropy loss (top row) 
 
 
 ## Training
+### Basics
 - All functions used for training **ELR** can be found in the `ELR` folder.
 - All functions used for training **ELR+** can be found in the `ELR_plus` folder.
 - Experiments settings and configurations used for different datasets are in the corresponding config json files.
+### Data
+- Please downlowd the data before running the code, add diretory to the downloaded data and modify the `data_loader.args.data_dir` in the corresponding config file.
+### Training
+- Code for training ELR is in the following files: [`train.py`](./ELR/train.py), code for training ELR+ is in the following files: [`train.py`](./ELR_plus/train.py) 
+```
+usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--alpha alpha] [--lambda lambda]
+                [--percent percent] [--asym asym] [--name exp_name]
 
+arguments:
+  
+```
 
 ## Lisence and Contributing
 - This README is formatted based on [paperswithcode](https://github.com/paperswithcode/releasing-research-code).
