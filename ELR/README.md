@@ -8,10 +8,8 @@ Train the network on the Symmmetric Noise CIFAR-10 dataset (noise rate = 0.8):
 ```
 python train.py -c config_cifar10.json --percent 0.8
 ```
-to train and relabel the dataset.
 
-
-Train the network on the Asymmmetric Noise CIFAR-10 dataset (noise rate = 0.4):
+Train the network on the Asymmmetric Noise CIFAR-100 dataset (noise rate = 0.4):
 
 ```
 python train.py -c config_cifar100.json --percent 0.4 --asym 1
