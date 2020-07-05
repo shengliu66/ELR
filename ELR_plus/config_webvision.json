@@ -20,11 +20,12 @@
 
 
     "mixup_alpha": 1.0,
-    "mixup_ramp": false,
+    "coef_step": 0,
     "num_classes": 50,
     "ema_alpha": 0.997,
-    "ema_update": false,
+    "ema_update": true,
     "ema_step": 40000,
+
     
 
 
