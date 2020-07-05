@@ -1,0 +1,8 @@
+torchvision==0.4.0a0
+requests==2.22.0
+tqdm==4.32.1
+torch==1.2.0
+numpy==1.16.4
+mlflow==1.9.1
+Pillow==7.2.0
+scikit_learn==0.23.1
