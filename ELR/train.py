@@ -71,7 +71,7 @@ def main(config: ConfigParser):
         num_examp = len(data_loader.dataset)
 
     train_loss = getattr(module_loss, config['train_loss']['type'])(num_examp=num_examp, num_classes=config['num_classes'],
-                                                            alpha=config['train_loss']['args']['alpha'])
+                                                            beta=config['train_loss']['args']['beta'])
 
     val_loss = getattr(module_loss, config['val_loss'])
     metrics = [getattr(module_metric, met) for met in config['metrics']]
