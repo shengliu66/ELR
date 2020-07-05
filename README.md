@@ -1,7 +1,7 @@
 # Early-Learning Regularization Prevents Memorization of Noisy Labels
 This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151) (2020).
 
-In this paper, we propose a novel framework (namely ELR) to perform classification via deep learning in the presence of **noisy annotations**.
+In the paper, we propose a novel framework (namely ELR) to perform classification via deep learning in the presence of **noisy annotations**.
 <p float="left" align="center">
 <img src="images/illustration_of_ELR.png" width="800" /> 
 <figcaption align="center">
