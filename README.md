@@ -47,7 +47,7 @@ usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--beta be
 ```
 Configuration file is **required** to be specified. Default option values, if not reset, will be the values in the configuration file. 
 Examples for ELR and ELR+ are showed in the *readme.md* of `ELR` and `ELR_plus` subfolders respectively.
-## Lisence and Contributing
+## License and Contributing
 - This README is formatted based on [paperswithcode](https://github.com/paperswithcode/releasing-research-code).
 - Feel free to post issues via Github. 
 
