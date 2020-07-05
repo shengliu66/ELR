@@ -1,6 +1,11 @@
 # Early-Learning Regularization Prevents Memorization of Noisy Labels
 This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151) (2020).
 
+<p float="left" align="center">
+<img src="images/illustration_of_ELR.png" width="200" /> 
+</p>
+
+
 ## Requirements
 - This codebase is written for `python3`.
 - To install necessary python packages, run `pip install -r requirements.txt`.
