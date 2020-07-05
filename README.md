@@ -24,7 +24,7 @@ These graphs show the results of training a ResNet-34 with a traditional cross e
 ### Data
 - Please downlowd the data before running the code, add diretory to the downloaded data and modify the `data_loader.args.data_dir` in the corresponding config file.
 ### Training
-- Code for training ELR is in the following files: [`train.py`](./ELR/train.py), code for training ELR+ is in the following files: [`train.py`](./ELR_plus/train.py) 
+- Code for training ELR is in the following file: [`train.py`](./ELR/train.py), code for training ELR+ is in the following file: [`train.py`](./ELR_plus/train.py) 
 ```
 usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--beta beta] [--lambda lambda] [--malpha mixup_alpha]
                 [--percent percent] [--asym asym] [--ealpha ema_alpha]  [--name exp_name] 
