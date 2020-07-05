@@ -1,7 +1,7 @@
 # Early-Learning Regularization Prevents Memorization of Noisy Labels
 This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151) (2020).
 
-In this paper, we propose a novel framework to perform classification via deep learning in the presence of **noisy annotations**.
+In this paper, we propose a novel framework (namely ELR) to perform classification via deep learning in the presence of **noisy annotations**.
 <p float="left" align="center">
 <img src="images/illustration_of_ELR.png" width="800" /> 
 <figcaption align="center">
@@ -16,8 +16,8 @@ Results of training a ResNet-34 with a traditional cross entropy loss (top row) 
 
 
 ## Training
-- All functions used for training ELR can be found in the `ELR` folder.
-- All functions used for training ELR+ can be found in the `ELR_plus` folder.
+- All functions used for training **ELR** can be found in the `ELR` folder.
+- All functions used for training **ELR+** can be found in the `ELR_plus` folder.
 - Experiments settings and configurations used for different datasets are in the corresponding config json files.
 
 
