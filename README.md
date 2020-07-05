@@ -22,7 +22,7 @@ These graphs show the results of training a ResNet-34 with a traditional cross e
 - All functions used for training the more advanced version (**ELR+**) can be found in the `ELR_plus` folder.
 - Experiments settings and configurations used for different datasets are in the corresponding config json files.
 ### Data
-- Please download the data before running the code, add diretory to the downloaded data and modify the `data_loader.args.data_dir` in the corresponding config file.
+- Please download the data before running the code, add path to the downloaded data to `data_loader.args.data_dir` in the corresponding config file.
 ### Training
 - Code for training ELR is in the following file: [`train.py`](./ELR/train.py), code for training ELR+ is in the following file: [`train.py`](./ELR_plus/train.py) 
 ```
