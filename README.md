@@ -42,7 +42,7 @@ usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--beta be
     --percent percent             noise level (e.g. 0.4 for 40%)
     --asym asym                   asymmetric noise is used when set to True
     --ealpha ema_alpha            weight averaging momentum for target estimation
-     --name exp_name               experiment name
+     --name exp_name              experiment name
 ```
 Configuration file is required to be specified. Default option values will be the values in the configuration file. 
 Examples for ELR and ELR+ are showed in the *readme.md* of `ELR` and `ELR_plus` subfolders respectively.
