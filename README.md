@@ -18,8 +18,8 @@ These graphs show the results of training a ResNet-34 with a traditional cross e
 
 ## Training
 ### Basics
-- All functions used for training **ELR** can be found in the `ELR` folder.
-- All functions used for training **ELR+** can be found in the `ELR_plus` folder.
+- All functions used for training the basic version of our technique (**ELR**) can be found in the `ELR` folder.
+- All functions used for training the more advanced version (**ELR+**) can be found in the `ELR_plus` folder.
 - Experiments settings and configurations used for different datasets are in the corresponding config json files.
 ### Data
 - Please downlowd the data before running the code, add diretory to the downloaded data and modify the `data_loader.args.data_dir` in the corresponding config file.
