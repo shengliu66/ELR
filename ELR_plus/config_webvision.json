@@ -31,7 +31,7 @@
     "data_loader": {
         "type": "WebvisionDataLoader",
         "args":{
-            "data_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/",
+            "data_dir": "./webvision",
             "batch_size": 32,
             "batch_size2": 32,
             "shuffle": true,
@@ -82,7 +82,7 @@
     "trainer": {
         "epochs": 100,
         "warmup": 0,
-        "save_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/saved/",
+        "save_dir": "saved/",
         "save_period": 1,
         "verbosity": 2,
         "label_dir": "saved/",
