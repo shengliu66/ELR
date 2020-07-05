@@ -3,6 +3,7 @@ This repository is the official implementation of [Early-Learning Regularization
 
 <p float="left" align="center">
 <img src="images/illustration_of_ELR.png" width="800" /> 
+<figcaption>{{ include.description }}</figcaption>
 </p>
 
 
