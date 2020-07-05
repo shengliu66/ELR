@@ -90,9 +90,9 @@ def main(config: ConfigParser):
         num_examp2 = len(data_loader2.dataset)
 
     train_loss1 = getattr(module_loss, config['train_loss']['type'])(num_examp=num_examp1, num_classes=config['num_classes'],
-                                                            device = 'cuda:'+ str(device_id[0]), config = config.config, alpha=config['train_loss']['args']['alpha'])
+                                                            device = 'cuda:'+ str(device_id[0]), config = config.config, beta=config['train_loss']['args']['beta'])
     train_loss2 = getattr(module_loss, config['train_loss']['type'])(num_examp=num_examp2, num_classes=config['num_classes'],
-                                                            device = 'cuda:'+str(device_id[-1]), config = config.config, alpha=config['train_loss']['args']['alpha'])
+                                                            device = 'cuda:'+str(device_id[-1]), config = config.config, beta=config['train_loss']['args']['beta'])
 
     val_loss = getattr(module_loss, config['val_loss'])
     metrics = [getattr(module_metric, met) for met in config['metrics']]
