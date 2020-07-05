@@ -25,13 +25,26 @@ Results of training a ResNet-34 with a traditional cross entropy loss (top row) 
 ### Training
 - Code for training ELR is in the following files: [`train.py`](./ELR/train.py), code for training ELR+ is in the following files: [`train.py`](./ELR_plus/train.py) 
 ```
-usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--alpha alpha] [--lambda lambda]
-                [--percent percent] [--asym asym] [--name exp_name]
+usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--beta beta] [--lambda lambda] [--malpha mixup_alpha]
+                [--percent percent] [--asym asym] [--ealpha ema_alpha]  [--name exp_name] 
 
-arguments:
+  arguments:
+    -c, --config                  config file path (default: None)
+    -r, --resume                  path to latest checkpoint (default: None)
+    -d, --device                  indices of GPUs to enable (default: all)     
   
+  options:
+    --lr learning_rate            learning rate (default value is the value in the config file)
+    --bs batch_size               batch size (default value is the value in the config file)
+    --beta beta                   temporal ensembling momentum beta for target estimation
+    --lambda lambda               regularization coefficient
+    --malpha mixup_alpha          mixup parameter alpha
+    --percent percent             noise level (e.g. 0.4 for 40%)
+    --asym asym                   asymmetric noise is used when set to True
+    --name exp_name               experiment name
+    --ealpha ema_alpha            weight averaging momentum for target estimation
 ```
-
+Examples for ELR and ELR+ are showed in the *readme.md* of `ELR` and `ELR_plus` subfolders respectively.
 ## Lisence and Contributing
 - This README is formatted based on [paperswithcode](https://github.com/paperswithcode/releasing-research-code).
 - Feel free to post issues via Github. 
