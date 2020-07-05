@@ -141,7 +141,7 @@ if __name__ == '__main__':
     options = [
         CustomArgs(['--lr', '--learning_rate'], type=float, target=('optimizer', 'args', 'lr')),
         CustomArgs(['--bs', '--batch_size'], type=int, target=('data_loader', 'args', 'batch_size')),
-        CustomArgs(['--alpha', '--alpha'], type=float, target=('train_loss', 'args', 'alpha')),
+        CustomArgs(['--beta', '--beta'], type=float, target=('train_loss', 'args', 'beta')),
         CustomArgs(['--lambda', '--lambda'], type=float, target=('train_loss', 'args', 'lambda')),
         CustomArgs(['--percent', '--percent'], type=float, target=('trainer', 'percent')),
         CustomArgs(['--asym', '--asym'], type=bool, target=('trainer', 'asym')),
