@@ -25,7 +25,7 @@
     "data_loader": {
         "type": "Clothing1MDataLoader",
         "args":{
-            "data_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/clothing1M/images",
+            "data_dir": "./clothing1M/images",
             "batch_size": 64,
             "batch_size2": 64,
             "num_batches": 3000,
@@ -80,7 +80,7 @@
     "trainer": {
         "epochs": 15,
         "warmup": 0,
-        "save_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/saved/",
+        "save_dir": "saved/",
         "save_period": 1,
         "verbosity": 2,
         "label_dir": "saved/",
