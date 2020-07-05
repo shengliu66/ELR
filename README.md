@@ -2,7 +2,7 @@
 This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151) (2020).
 
 <p float="left" align="center">
-<img src="images/illustration_of_ELR.png" width="1000" /> 
+<img src="images/illustration_of_ELR.png" width="800" /> 
 </p>
 
 
