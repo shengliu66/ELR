@@ -28,7 +28,7 @@
     "data_loader": {
         "type": "CIFAR100DataLoader",
         "args":{
-            "data_dir": "/gpfs/scratch/sl5924/noisy/data/",
+            "data_dir": "./data/",
             "batch_size": 128,
             "batch_size2": 128,
             "num_batches": 0,
@@ -83,7 +83,7 @@
     "trainer": {
         "epochs": 250,
         "warmup": 0,
-        "save_dir": "/gpfs/data/razavianlab/skynet/alzheimers/noisy_label/saved/",
+        "save_dir": "saved/",
         "save_period": 1,
         "verbosity": 2,
         "label_dir": "saved/",
