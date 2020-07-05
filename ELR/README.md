@@ -21,4 +21,4 @@ The config files can be modified to adjust hyperparameters and optimization sett
 
 
 ## References
-- S. Liu, J. N. Weed, N. Razavian and C. F. Granda "Joint Optimization Framework for Learning with Noisy Labels", 2020
+- S. Liu, J. Niles-Weed, N. Razavian and C. Fernandez-Granda "Early-Learning Regularization Prevents Memorization of Noisy Labels", 2020
