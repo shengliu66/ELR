@@ -17,7 +17,7 @@
     "mixup_alpha": 1,
     "coef_step": 0,
     "num_classes": 14,
-    "ema_alpha": 0.999,
+    "ema_alpha": 0.9999,
     "ema_update": false,
     "ema_step": -1,
 
