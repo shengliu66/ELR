@@ -47,6 +47,39 @@ usage: train.py [-c] [-r] [-d] [--lr learning_rate] [--bs batch_size] [--beta be
 ```
 Configuration file is **required** to be specified. Default option values, if not reset, will be the values in the configuration file. 
 Examples for ELR and ELR+ are shown in the *readme.md* of `ELR` and `ELR_plus` subfolders respectively.
+
+### Example
+In order to use our proposed early learning regularization (ELR), you can simply replace your loss function by our loss function:
+```
+class elr_loss(nn.Module):
+    def __init__(self, num_examp, num_classes=10, lambda = 3, beta=0.7):
+         r"""Early Learning Regularization.
+         
+         * :attr:`num_examp` Total number of training examples.
+         * :attr: `num_classes` Number of classes in the classification problem.
+         * :attr: `lambda` Regularization strength; must be a positive float, controling the strength of the ELR.
+         * :attr: `beta` Temporal ensembling momentum for target estimation.
+         """
+
+        super(elr_loss, self).__init__()
+        self.num_classes = num_classes
+        self.USE_CUDA = torch.cuda.is_available()
+        self.target = torch.zeros(num_examp, self.num_classes).cuda() if self.USE_CUDA else torch.zeros(num_examp, self.num_classes)
+        self.beta = beta
+        self.lambda = lambda
+        
+
+    def forward(self, index, output, label):
+        y_pred = F.softmax(output,dim=1)
+        y_pred = torch.clamp(y_pred, 1e-4, 1.0-1e-4)
+        y_pred_ = y_pred.data.detach()
+        self.target[index] = self.beta * self.target[index] + (1-self.beta) * ((y_pred_)/(y_pred_).sum(dim=1,keepdim=True))
+        ce_loss = F.cross_entropy(output, label)
+        elr_reg = ((1-(self.target[index] * y_pred).sum(dim=1)).log()).mean()
+        final_loss = ce_loss +  self.lambda *elr_reg
+        return  final_loss
+
+```
 ## License and Contributing
 - This README is formatted based on [paperswithcode](https://github.com/paperswithcode/releasing-research-code).
 - Feel free to post issues via Github. 
