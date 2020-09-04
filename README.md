@@ -72,9 +72,9 @@ class elr_loss(nn.Module):
     def forward(self, index, output, label):
         r"""Early Learning Regularization.
          Args
-         * `index` Training sample index.
-         * `output` Model's prediction.
-         * `label` Labels.
+         * `index` Training sample index, used to track training examples in different iterations.
+         * `output` Model's prediction, same as PyTorch provided functions.
+         * `label` Labels, same as PyTorch provided loss functions.
          """
 
         y_pred = F.softmax(output,dim=1)
