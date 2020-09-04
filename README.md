@@ -54,11 +54,11 @@ In order to use our proposed early learning regularization (ELR), you can simply
 class elr_loss(nn.Module):
     def __init__(self, num_examp, num_classes=10, lambda = 3, beta=0.7):
          r"""Early Learning Regularization.
-         
-         * :attr:`num_examp` Total number of training examples.
-         * :attr: `num_classes` Number of classes in the classification problem.
-         * :attr: `lambda` Regularization strength; must be a positive float, controling the strength of the ELR.
-         * :attr: `beta` Temporal ensembling momentum for target estimation.
+         Parameters
+         * `num_examp` Total number of training examples.
+         * `num_classes` Number of classes in the classification problem.
+         * `lambda` Regularization strength; must be a positive float, controling the strength of the ELR.
+         * `beta` Temporal ensembling momentum for target estimation.
          """
 
         super(elr_loss, self).__init__()
@@ -70,6 +70,13 @@ class elr_loss(nn.Module):
         
 
     def forward(self, index, output, label):
+        r"""Early Learning Regularization.
+         Args
+         * `index` Training sample index.
+         * `output` Model's prediction.
+         * `label` Labels.
+         """
+
         y_pred = F.softmax(output,dim=1)
         y_pred = torch.clamp(y_pred, 1e-4, 1.0-1e-4)
         y_pred_ = y_pred.data.detach()
