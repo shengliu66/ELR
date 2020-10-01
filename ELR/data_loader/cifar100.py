@@ -109,17 +109,32 @@ class CIFAR100_train(torchvision.datasets.CIFAR100):
 
         return new_y
 
+#     def build_for_cifar100(self, size, noise):
+#         """ random flip between two random classes.
+#         """
+#         assert(noise >= 0.) and (noise <= 1.)
+
+#         P = np.eye(size)
+#         cls1, cls2 = np.random.choice(range(size), size=2, replace=False)
+#         P[cls1, cls2] = noise
+#         P[cls2, cls1] = noise
+#         P[cls1, cls1] = 1.0 - noise
+#         P[cls2, cls2] = 1.0 - noise
+
+#         assert_array_almost_equal(P.sum(axis=1), 1, 1)
+#         return P
     def build_for_cifar100(self, size, noise):
-        """ random flip between two random classes.
-        """
+    """ The noise matrix flips to the "next" class with probability 'noise'.
+    """
+
         assert(noise >= 0.) and (noise <= 1.)
 
-        P = np.eye(size)
-        cls1, cls2 = np.random.choice(range(size), size=2, replace=False)
-        P[cls1, cls2] = noise
-        P[cls2, cls1] = noise
-        P[cls1, cls1] = 1.0 - noise
-        P[cls2, cls2] = 1.0 - noise
+        P = (1. - noise) * np.eye(size)
+        for i in np.arange(size - 1):
+            P[i, i + 1] = noise
+
+        # adjust last row
+        P[size - 1, 0] = noise
 
         assert_array_almost_equal(P.sum(axis=1), 1, 1)
         return P
