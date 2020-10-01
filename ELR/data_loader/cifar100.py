@@ -124,8 +124,8 @@ class CIFAR100_train(torchvision.datasets.CIFAR100):
 #         assert_array_almost_equal(P.sum(axis=1), 1, 1)
 #         return P
     def build_for_cifar100(self, size, noise):
-    """ The noise matrix flips to the "next" class with probability 'noise'.
-    """
+        """ The noise matrix flips to the "next" class with probability 'noise'.
+        """
 
         assert(noise >= 0.) and (noise <= 1.)
 
