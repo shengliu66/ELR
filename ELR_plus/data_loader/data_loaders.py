@@ -67,10 +67,6 @@ class CIFAR100DataLoader(BaseDataLoader):
                          val_dataset = self.val_dataset)
 
         self.batch_size_ = int(batch_size)
-
-    def run(self):
-        batch_sampler = torch.utils.data.sampler.BatchSampler(self.sampler, self.batch_size_, False)
-        self.batch_sampler = batch_sampler
         
 
 class Clothing1MDataLoader(BaseDataLoader):
