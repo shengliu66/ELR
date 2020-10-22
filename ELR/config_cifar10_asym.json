@@ -66,10 +66,10 @@
         "tensorboard": false,
         "mlflow": true,
         "_percent": "Percentage of noise",
-        "percent": 0.8,
+        "percent": 0.4,
         "_begin": "When to begin updating labels",
         "begin": 0,
         "_asym": "symmetric noise if false",
-        "asym": false
+        "asym": true
     }
 }
