@@ -23,12 +23,20 @@ python train.py -c config_cifar100.json --percent 0.4 --asym 1
 The config files can be modified to adjust hyperparameters and optimization settings. 
 
 ## Results
+### CIFAR10
 <center>
 
 | Method                 |  20%        |    40%      |   60%        |      80%    |    40% Asym |
 | ---------------------- | ----------- | ----------- | -----------  | ----------- | ----------- |
 | ELR                    | 91.16%      | 89.15%      |  86.12%      | 73.86%      |     90.12%  |
 | ELR (cosine annealing) | 91.12%      | 91.43%      |  88.87%      | 80.69%      |    90.35%   |
+
+### CIAFAR100
+
+| Method                 |  20%        |    40%      |   60%        |      80%    |    40% Asym |
+| ---------------------- | ----------- | ----------- | -----------  | ----------- | ----------- |
+| ELR                    | 74.21%      | 68.28%      |  59.28%      | 29.78%      |    73.71%  |
+| ELR (cosine annealing) | 74.68%      | 68.43%      |  60.05%      | 30.27%      |    73.96%   |
 
 </center>
 
