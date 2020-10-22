@@ -22,6 +22,15 @@ python train.py -c config_cifar100.json --percent 0.4 --asym 1
 
 The config files can be modified to adjust hyperparameters and optimization settings. 
 
+## Results
+<center>
+
+| Method                 |  20%        |    40%      |   60%        |      80%    |    40% Asym |
+| ---------------------- | ----------- | ----------- | -----------  | ----------- | ----------- |
+| ELR                    | 91.16%      | 89.15%      |  86.12%      | 73.86%      |     90.12%  |
+| ELR (cosine annealing) | 91.12%      | 91.43%      |  88.87%      | 80.69%      |    90.35%   |
+
+</center>
 
 ## References
 - S. Liu, J. Niles-Weed, N. Razavian and C. Fernandez-Granda "Early-Learning Regularization Prevents Memorization of Noisy Labels", 2020
