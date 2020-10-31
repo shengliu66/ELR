@@ -19,7 +19,7 @@
     },
 
 
-    "mixup_alpha": 1.0,
+    "mixup_alpha": 0.0,
     "mixup_ramp": false,
     "num_classes": 50,
     "ema_alpha": 0.997,
