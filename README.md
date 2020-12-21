@@ -72,8 +72,8 @@ class elr_loss(nn.Module):
     def forward(self, index, output, label):
         r"""Early Learning Regularization.
          Args
-         * `index` Training sample index, used to track training examples in different iterations.
-         * `output` Model's prediction, same as PyTorch provided functions.
+         * `index` Training sample index, due to training set shuffling, index is used to track training examples in different iterations.
+         * `output` Model's logits, same as PyTorch provided loss functions.
          * `label` Labels, same as PyTorch provided loss functions.
          """
 
