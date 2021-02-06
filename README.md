@@ -97,7 +97,8 @@ For technical details and full experimental results, please check [our paper](ht
 @article{liu2020early,
   title={Early-Learning Regularization Prevents Memorization of Noisy Labels},
   author={Liu, Sheng and Niles-Weed, Jonathan and Razavian, Narges and Fernandez-Granda, Carlos},
-  journal={arXiv preprint arXiv:2007.00151},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
   year={2020}
 }
 ```
