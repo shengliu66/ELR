@@ -1,4 +1,5 @@
-<div align="center">    
+<div align="center">   
+  
 # Early-Learning Regularization Prevents Memorization of Noisy Labels
 [![Paper](https://img.shields.io/badge/paper-arXiv%3A2007.00151-green)](https://arxiv.org/abs/2007.00151)
 
