@@ -1,4 +1,11 @@
 # Early-Learning Regularization Prevents Memorization of Noisy Labels
+<div align="center">    
+
+# Early-Learning Regularization Prevents Memorization of Noisy Labels
+[![Paper](https://img.shields.io/badge/paper-arXiv%3A2007.00151-green)](https://arxiv.org/abs/2007.00151)
+
+</div>
+
 This repository is the official implementation of [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151) (NeurIPS 2020).
 
 We propose a novel framework to perform classification via deep learning in the presence of **noisy annotations**. When trained on noisy labels, deep neural networks have been observed to first fit the training data with clean labels during an **early learning** phase, before eventually **memorizing** the examples with false labels. Our technique exploits the progress of the early learning phase via **regularization** to perform classification from noisy labels. There are two key elements to our approach. First, we leverage semi-supervised learning techniques to produce target probabilities based on the model outputs. Second, we design a regularization term that steers the model towards these targets, implicitly preventing memorization of the false labels. The resulting framework is shown to provide robustness to noisy annotations on several standard benchmarks and real-world datasets, where it achieves results comparable to the state of the art.
