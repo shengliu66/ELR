@@ -16,6 +16,13 @@ These graphs show the results of training a ResNet-34 with a traditional cross e
 </figcaption>
 </p>
 
+<p float="left" align="center">
+<img src="images/simplexheatmap.gif" width="800" /> 
+<figcaption align="center">
+Learning path of sample with correct label (left) and sample with wrong label (right). Corners correspond to one-hot
+vectors. Bright green represent model's prediction: when the example is wrongly labeled, the clean label is predicted at initialization, and then wrong label is predicted at the end of training.
+</figcaption>
+</p>
 
 ## Requirements
 - This codebase is written for `python3`.
