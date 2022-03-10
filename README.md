@@ -108,6 +108,9 @@ For technical details and full experimental results, please check [our paper](ht
   volume={33},
   year={2020}
 }
+
+Similar early learning and memorization performance is observed in Weakly Supervised Semantic Segmentation (WSSS), we have a related paper addressing that: 
+[Adaptive Early-Learning Correction for Segmentation from Noisy Annotations] (https://arxiv.org/abs/2110.03740)
 ```
 ## Contact
 Please contact shengliu@nyu.edu if you have any question on the codes.
