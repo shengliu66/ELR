@@ -17,7 +17,7 @@ These graphs show the results of training a ResNet-34 with a traditional cross e
 </p>
 
 <p float="left" align="center">
-<img src="images/clean_label_simplexheatmap.gif" width="400" /> 
+<img src="images/clean_label_simplexheatmap2.gif" width="400" /> 
 <img src="images/false_label_simplexheatmap.gif" width="400" /> 
 <figcaption align="center">
 Learning path of sample with correct label (left) and sample with wrong label (right). Corners correspond to one-hot
