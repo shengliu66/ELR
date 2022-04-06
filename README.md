@@ -118,6 +118,6 @@ For technical details and full experimental results, please check [our paper](ht
 }
 ```
 Similar early learning and memorization phenomenon is observed in semantic segmentations, a related paper addressing WSSS by adaptive correction: 
-[Adaptive Early-Learning Correction for Segmentation from Noisy Annotations](https://arxiv.org/abs/2110.03740) (CVPR2022).
+[Adaptive Early-Learning Correction for Segmentation from Noisy Annotations](https://arxiv.org/abs/2110.03740) (CVPR2022 **Oral**).
 ## Contact
 Please contact shengliu@nyu.edu if you have any question on the codes.
