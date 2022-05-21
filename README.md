@@ -102,6 +102,11 @@ class elr_loss(nn.Module):
         return  final_loss
 
 ```
+## Identify Wrong Labels
+- After finish training, obtain and compare the self.target of the ELR loss to original labels y
+- the mislabeled examples are those have self.target != y
+
+
 ## License and Contributing
 - This README is formatted based on [paperswithcode](https://github.com/paperswithcode/releasing-research-code).
 - Feel free to post issues via Github. 
