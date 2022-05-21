@@ -104,7 +104,7 @@ class elr_loss(nn.Module):
 ```
 ## Identify Wrong Labels
 - After finish training, obtain and compare the self.target of the ELR loss to original labels y
-- the mislabeled examples are identified as those who has self.target != y
+- the mislabeled examples are identified as those who has argmax(self.target) != y
 
 
 ## License and Contributing
