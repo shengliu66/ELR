@@ -25,6 +25,11 @@ vectors. Bright green represents model's prediction: when the example is wrongly
 </figcaption>
 </p>
 
+## Early-learning modeled for each example
+Early-learning could not happen simultaneously for all examples. Therefore, In SOP, We model the early-learning phenomenon for each example using a overparameterization term learned for each instance. We further impose sparsity on it via implicit bias of stochastic gradient descent. 
+If you are interested, take a look [![Paper](https://img.shields.io/badge/paper-ICML%SOP-green)](https://proceedings.mlr.press/v162/liu22w/liu22w.pdf)!
+
+
 ## Requirements
 - This codebase is written for `python3`.
 - To install necessary python packages, run `pip install -r requirements.txt`.
