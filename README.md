@@ -26,7 +26,7 @@ vectors. Bright green represents model's prediction: when the example is wrongly
 </p>
 
 ## Early-learning modeled for each example
-Early-learning could not happen simultaneously for all examples, e.g. when noisy labels are dependent to each instance. Therefore, In [SOP](https://github.com/shengliu66/SOP), We model the early-learning phenomenon for each example using a overparameterization term learned for each instance. We further impose sparsity on it via implicit bias of stochastic gradient descent. This method achieved SoTA for instance dependent noisy label. If you are interested, take a look [Paper](https://proceedings.mlr.press/v162/liu22w/liu22w.pdf) published at ICML 2022!
+Early-learning could not happen simultaneously for all examples, e.g. when noisy labels are dependent to each instance. Therefore, In [SOP](https://github.com/shengliu66/SOP), We model the early-learning phenomenon for each example using a overparameterization term learned for each instance. We further impose sparsity on it via implicit bias of stochastic gradient descent. This method achieved SoTA for instance dependent noisy label. If you are interested, take a look at [Paper](https://proceedings.mlr.press/v162/liu22w/liu22w.pdf) published in ICML 2022!
 
 
 ## Requirements
