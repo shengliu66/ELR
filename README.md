@@ -21,7 +21,7 @@ These graphs show the results of training a ResNet-34 with a traditional cross e
 <img src="images/false_label_simplexheatmap.gif" width="400" /> 
 <figcaption align="center">
 Learning path of sample with correct label (left) and sample with wrong label (right). Corners correspond to one-hot
-vectors. Bright green represents model's prediction: when the example is wrongly labeled, the clean label is predicted at initialization, and then wrong label is predicted at the end of training. The model is trained with first 3 classes in CIFAR10.
+vectors. Bright green represents model's prediction: when the example is wrongly labeled, the clean label is predicted during early-learning, and then wrong label is predicted at the end of training. The model is trained with first 3 classes in CIFAR10.
 </figcaption>
 </p>
 
