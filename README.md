@@ -118,6 +118,20 @@ class elr_loss(nn.Module):
 ## Reference
 For technical details and full experimental results, please check [our paper](https://arxiv.org/abs/2007.00151).
 ```
+@InProceedings{pmlr-v162-liu22w,
+  title = 	 {Robust Training under Label Noise by Over-parameterization},
+  author =       {Liu, Sheng and Zhu, Zhihui and Qu, Qing and You, Chong},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {14153--14172},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR}
+}
+```
+```
 @article{liu2020early,
   title={Early-Learning Regularization Prevents Memorization of Noisy Labels},
   author={Liu, Sheng and Niles-Weed, Jonathan and Razavian, Narges and Fernandez-Granda, Carlos},
