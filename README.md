@@ -121,14 +121,9 @@ For technical details and full experimental results, please check [our paper](ht
 @InProceedings{pmlr-v162-liu22w,
   title = 	 {Robust Training under Label Noise by Over-parameterization},
   author =       {Liu, Sheng and Zhu, Zhihui and Qu, Qing and You, Chong},
-  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
-  pages = 	 {14153--14172},
-  year = 	 {2022},
-  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  journal = 	 {Proceedings of the 39th International Conference on Machine Learning},
   volume = 	 {162},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {17--23 Jul},
-  publisher =    {PMLR}
+  year = 	 {2022}
 }
 ```
 ```
