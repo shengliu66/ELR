@@ -68,7 +68,7 @@ Configuration file is **required** to be specified. Default option values, if no
 Examples for ELR and ELR+ are shown in the *readme.md* of `ELR` and `ELR_plus` subfolders respectively.
 
 ### Example
-In order to use our proposed early learning regularization (ELR), you can simply replace your loss function by the following loss function. Usually, **lambda** which used to control the strength of the regularization term need to be tuned more carefully, and the value of **beta** is often quite robust (can be 0.7, 0.9 or 0.99, etc.)
+In order to use our proposed early learning regularization (ELR), you can simply replace your loss function by the following loss function. Usually, **lambda** which is used to control the strength of the regularization term needs to be tuned more carefully, and the value of **beta** is quite robust (can be 0.7, 0.9 or 0.99, etc.)
 ```
 class elr_loss(nn.Module):
     def __init__(self, num_examp, num_classes=10, lambda = 3, beta=0.7):
